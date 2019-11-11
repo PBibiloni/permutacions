@@ -97,3 +97,16 @@ print(f'''
     X*Y: {X*Y}
     Y*Z: {Y*Z}
 ''')
+
+
+# J = NPN^{-1} from [1]
+J = Permutacio.de_cicles(
+    (a, y, u, r, i, c, x, q, m, g, o, v, s, k, e, d, z, p, l, f, w, t, n, j, h, b)
+)
+
+print(f'''
+    N * P * N^-1 = {J}
+    
+    J^-1 * UV * J = {J.exp(-1) * U * V * J}
+               VW = {V*W}
+''')
